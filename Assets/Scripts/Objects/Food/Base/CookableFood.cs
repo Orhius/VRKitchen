@@ -1,16 +1,7 @@
 using UnityEngine;
 
-public abstract class CookableFood : MonoBehaviour, ICookable
+public abstract class CookableFood : Food, ICookable
 {
-    [SerializeField] protected string foodName;
-    public string FoodName
-    {
-        get { return foodName; }
-        private set
-        {
-            if (value != null) foodName = value;
-        }
-    }
     [SerializeField] protected float cookingTime;
     public float CookingTime
     {
