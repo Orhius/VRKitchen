@@ -218,7 +218,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b613d88150e55e943adb3f91eb7a8db2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  foodName: buterbrod
+  <foodData>k__BackingField: {fileID: 11400000, guid: 024be1bbae9bea946b0fff33a7d05c6b, type: 2}
 --- !u!1001 &5589400553853948433
 PrefabInstance:
   m_ObjectHideFlags: 0

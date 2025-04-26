@@ -21,7 +21,7 @@ public class FoodConstructor : Food
     }
     private void OnTriggerEnter(Collider obj)
     {
-        if(obj.GetComponent<Food>() != null && recipe.Peek() == obj.GetComponent<Food>().FoodName)
+        if(obj.GetComponent<Food>() != null && recipe.Peek() == obj.GetComponent<Food>().foodData.FoodName)
         {
             if(recipe.Count > 1)
             {
