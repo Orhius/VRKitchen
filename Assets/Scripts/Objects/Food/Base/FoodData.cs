@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI;
 [CreateAssetMenu(fileName = "FoodData", menuName = "Scriptables/FoodData")]
 public class FoodData : ScriptableObject
 {
@@ -9,6 +10,15 @@ public class FoodData : ScriptableObject
         private set
         {
             if (value != null) foodName = value;
+        }
+    }
+    [SerializeField] protected Sprite foodImage;
+    public Sprite FoodImage
+    {
+        get { return foodImage; }
+        private set
+        {
+            if (value != null) foodImage = value;
         }
     }
 }

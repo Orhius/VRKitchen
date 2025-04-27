@@ -13,3 +13,4 @@ MonoBehaviour:
   m_Name: doubleButerbrod
   m_EditorClassIdentifier: 
   foodName: doubleButerbrod
+  foodImage: {fileID: 21300000, guid: c1b50638cccabc34fa2c3cfd6b015143, type: 3}
