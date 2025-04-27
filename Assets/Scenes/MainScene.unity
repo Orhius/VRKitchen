@@ -5435,11 +5435,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   orderGenTime: 30
-  minOrderGenTime: 16
+  minOrderGenTime: 14
   timeDecreaseModifier: 2
   difficultyCycle: 2
   orderGenerator: {fileID: 563931014}
-  orderCanvas: {fileID: 563931017}
 --- !u!4 &563931016
 Transform:
   m_ObjectHideFlags: 0

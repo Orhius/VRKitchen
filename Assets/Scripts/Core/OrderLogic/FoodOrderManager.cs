@@ -33,7 +33,7 @@ public class FoodOrderManager : MonoBehaviour
     [ContextMenu("CreateNewOrder")]
     private void CreateNewOrder()
     {
-        orderGenTime -= timeDecreaseModifier;
+        if(orderGenTime > minOrderGenTime + timeDecreaseModifier) orderGenTime -= timeDecreaseModifier;
         currentOrderGenTime = orderGenTime;
 
         Order order = orderGenerator.GenerateOrder();
