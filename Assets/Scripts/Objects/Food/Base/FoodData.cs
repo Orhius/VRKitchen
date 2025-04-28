@@ -1,6 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
-[CreateAssetMenu(fileName = "FoodData", menuName = "Scriptables/FoodData")]
+[CreateAssetMenu(fileName = "foodData", menuName = "Scriptables/foodData")]
 public class FoodData : ScriptableObject
 {
     [SerializeField] protected string foodName;

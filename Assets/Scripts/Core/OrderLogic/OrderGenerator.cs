@@ -16,6 +16,19 @@ public class OrderGenerator : MonoBehaviour
             FoodData randomItem = foodList[Random.Range(0, foodList.Count)];
             orderFood.Add(randomItem);
         }
-        return new Order(orderFood);
+        return new Order(orderFood, GenerateID());
+    }
+    private string GenerateID()
+    {
+        string guid = System.Guid.NewGuid().ToString();
+        Debug.Log(guid);
+
+        foreach (Order order in FoodOrderManager.orders)
+        {
+            if (guid == order.id) GenerateID();
+        }
+        Debug.Log(guid);
+
+        return guid;
     }
 }
