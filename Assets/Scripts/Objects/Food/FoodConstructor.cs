@@ -21,8 +21,9 @@ public class FoodConstructor : Food
     }
     private void OnTriggerEnter(Collider obj)
     {
-        if(obj.GetComponent<Food>() != null && recipe.Peek() == obj.GetComponent<Food>().foodData.FoodName)
+        if(obj.GetComponent<Food>() != null)
         {
+            if(recipe.Peek() != obj.GetComponent<Food>().foodData.FoodName) { return; }
             if(recipe.Count > 1)
             {
                 recipe.Dequeue();

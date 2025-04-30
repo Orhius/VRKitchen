@@ -218,7 +218,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b613d88150e55e943adb3f91eb7a8db2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  foodName: upperBreadRye
+  <foodData>k__BackingField: {fileID: 11400000, guid: a8b4afbeed2f2f141bdf17c370400aa1, type: 2}
 --- !u!1001 &8342311546137368448
 PrefabInstance:
   m_ObjectHideFlags: 0
